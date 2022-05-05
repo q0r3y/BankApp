@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('../../partials/header'); %>
+    <link rel="stylesheet" href="../styles/teller/tellerStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerHomeStyles.css">
+</head>
+
+<body>
+
+<%- include ('../../partials/teller/tellerTopWelcomeBar'); -%>
+
+<section id="main-display-bar">
+    <button id="new-account-button">Open New Account</button>
+    <button id="withdrawal-button">Withdrawal Cash</button>
+    <button id="deposit-button">Deposit Cash</button>
+    <button id="transfer-button">Custom</button>
+    <button id="statement-button">Generate Statements</button>
+    <button id="upload-button">Upload Document</button>
+</section>
+
+<script src="../js/pages/teller/tellerHome.js" type="module"></script>
+
+</body>
+<%- include('../../partials/footer'); %>
+</html>

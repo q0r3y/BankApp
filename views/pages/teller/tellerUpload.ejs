@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('../../partials/header'); %>
+    <link rel="stylesheet" href="../styles/teller/tellerStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerSearchStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerUploadStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerSearchResultStyles.css">
+</head>
+
+<body>
+
+<%- include ('../../partials/teller/tellerTopWelcomeBar'); -%>
+
+<section id="main-display-bar">
+
+    <%- include ('../../partials/teller/searchMember'); -%>
+    <%- include ('../../partials/teller/searchMemberResults'); -%>
+
+    <section id="upload-section">
+        <input id="file" name="testFile" type="file"/>
+        <button id="submit-button">Upload Document</button>
+    </section>
+
+    <%- include ('../../partials/teller/responseMessage'); -%>
+</section>
+
+<script src="../js/pages/teller/tellerUpload.js" type="module"></script>
+
+</body>
+<%- include('../../partials/footer'); %>
+</html>

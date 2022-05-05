@@ -1,0 +1,20 @@
+#main-display-bar {
+    display: grid;
+    grid-template-rows: 5vh 10vh auto 3vh 3vh;
+}
+
+#deposit-input {
+    height: 2em;
+    margin: auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+}
+
+#message-response {
+    margin: auto;
+}
+
+#deposit-input > * {
+    margin: auto;
+}

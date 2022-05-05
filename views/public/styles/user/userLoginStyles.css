@@ -1,0 +1,15 @@
+/** CSS styles for the login page **/
+
+form {
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+
+
+
+

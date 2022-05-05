@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <%- include('../../partials/header'); %>
+    <link rel="stylesheet" href="../styles/user/userHomeStyles.css">
+    <link rel="stylesheet" href="../styles/user/userDepositStyles.css">
+</head>
+</head>
+<body>
+
+<%- include ('../../partials/user/userTopWelcomBar.ejs'); -%>
+
+<section id="main-display-bar">
+    <input type="button" class="image-button" value="Start Camera" name="start-capture-button"
+           id="start-capture-button">
+    <input type="button" class="image-button" value="Capture Image" name="take-capture-button" id="take-capture-button">
+    <input type="button" class="image-button" value="Send Image" name="send-capture-button" id="send-capture-button">
+    <video autoplay id="video"></video>
+    <canvas id="video-canvas"></canvas>
+</section>
+
+<%- include ('../../partials/user/userBottomMenuBar.ejs'); -%>
+
+<script src="../js/components/user/AppScripts.js" type="module"></script>
+<script src="../js/pages/user/userDeposit.js" type="module"></script>
+
+</body>
+<%- include('../../partials/footer'); %>
+</html>

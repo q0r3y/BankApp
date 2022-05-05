@@ -1,0 +1,36 @@
+/** CSS styles for the transfer page **/
+
+#main-display-bar {
+    display: grid;
+    grid-template-rows: 3em 1fr;
+    padding: 10px;
+}
+
+#transfer-form {
+    margin: 4vh 2vw auto 2vw;
+    text-align: left;
+    display: grid;
+    grid-template-rows: repeat(8, 6vh);
+}
+
+#transfer-form * {
+    border-radius: 10px;
+}
+
+#transfer-submit {
+    margin-top: 1vh;
+}
+
+#message-text {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+

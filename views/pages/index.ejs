@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('../partials/header'); %>
+    <link rel="stylesheet" href="../styles/indexStyles.css">
+    <script src="../js/static.js" type="module"></script>
+    <script src="../js/pages/index.js" type="module"></script>
+</head>
+<body>
+
+<figure>
+    <a href="/">
+        <img src="/images/152-bitcoin.png" alt="Mr.Big's Bank Logo">
+    </a>
+</figure>
+
+<form id="selection-form">
+    <input type="button" value="User Login" name="button" id="user-button" disabled>
+    <input type="button" value="Teller Login" name="button" id="teller-button">
+</form>
+
+<p id="message-text"></p>
+
+</body>
+<%- include('../partials/footer'); %>
+</html>

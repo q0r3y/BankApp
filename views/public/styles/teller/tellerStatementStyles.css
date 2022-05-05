@@ -1,0 +1,34 @@
+#main-display-bar {
+    display: grid;
+    grid-template-rows: 5vh 10vh auto auto 5em;
+}
+
+#member-shares {
+    max-height: 40vh;
+}
+
+label {
+    margin: auto;
+}
+
+input {
+    margin: auto;
+    max-height: 2em;
+}
+
+#statement-generator {
+    margin: 0 auto 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#generate-button {
+    grid-column: 2;
+}
+
+#message-response {
+    margin: auto;
+}
+

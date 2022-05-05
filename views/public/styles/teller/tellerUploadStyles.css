@@ -1,0 +1,10 @@
+#main-display-bar {
+    display: grid;
+    grid-template-rows: 5vh 10vh 20vh;
+
+}
+
+#upload-section {
+    margin: auto;
+    width: 10vw;
+}

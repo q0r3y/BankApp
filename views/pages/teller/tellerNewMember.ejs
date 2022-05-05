@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('../../partials/header'); %>
+    <link rel="stylesheet" href="../styles/teller/tellerStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerNewMemberStyles.css">
+</head>
+<body>
+
+<%- include ('../../partials/teller/tellerTopWelcomeBar'); -%>
+
+<section id="main-display-bar">
+
+    <p>Create New Member</p>
+
+    <form id="new-user-form">
+        <label for="first-name-input">First Name</label>
+        <input type="text" name="first-name" id="first-name-input" placeholder="First Name">
+        <label for="last-name-input">Last Name</label>
+        <input type="text" name="last-name" id="last-name-input" placeholder="Last Name">
+        <label for="birth-date-input">Birth Date</label>
+        <input type="text" name="birth-date" id="birth-date-input" placeholder="Birth Date">
+        <label for="address-input">Street Address</label>
+        <input type="text" name="street-address" id="address-input" placeholder="Street Address">
+        <label for="city-input">City</label>
+        <input type="text" name="city" id="city-input" placeholder="City">
+        <label for="state-input">State</label>
+        <input type="text" name="state" id="state-input" placeholder="State">
+        <label for="zip-input">Zip</label>
+        <input type="text" name="zip" id="zip-input" placeholder="Zip">
+        <label for="phone-number-input">Phone Number</label>
+        <input type="text" name="phone-number" id="phone-number-input" placeholder="Phone Number">
+        <label for="ssn-input">Social Security Number</label>
+        <input type="text" name="ssn" id="ssn-input" placeholder="Social Security Number">
+        <label for="create-user-check">Create User Account?</label>
+        <input type="checkbox" id="create-user-check" name="create-user" value="Create User">
+
+        <label for="email-input">Email</label>
+        <input type="text" name="email" id="email-input" placeholder="Email">
+        <label for="password-input">Password</label>
+        <input type="password" pattern=".{5,}" required title="5 characters minimum" name="password" id="password-input"
+               placeholder="Password">
+
+        <label for="beneficiary-check">Add Beneficiary?</label>
+        <input type="checkbox" id="beneficiary-check" name="add-beneficiary" value="Add Beneficiary">
+        <label for="b-first-name-input">First Name</label>
+        <input type="text" name="b-first-name" id="b-first-name-input" placeholder="First Name" disabled>
+        <label for="b-last-name-input">Last Name</label>
+        <input type="text" name="b-last-name" id="b-last-name-input" placeholder="Last Name" disabled>
+        <label for="b-birth-date-input">Birth Date</label>
+        <input type="text" name="b-birth-date" id="b-birth-date-input" placeholder="Birth Date" disabled>
+        <label for="b-address-input">Street Address</label>
+        <input type="text" name="b-street-address" id="b-address-input" placeholder="Street Address" disabled>
+        <label for="b-city-input">City</label>
+        <input type="text" name="b-city" id="b-city-input" placeholder="City" disabled>
+        <label for="b-state-input">State</label>
+        <input type="text" name="b-state" id="b-state-input" placeholder="State" disabled>
+        <label for="b-zip-input">Zip</label>
+        <input type="text" name="b-zip" id="b-zip-input" placeholder="Zip" disabled>
+        <label for="b-phone-number-input">Phone Number</label>
+        <input type="text" name="b-phone-number" id="b-phone-number-input" placeholder="Phone Number" disabled>
+        <label for="b-ssn-input">Social Security Number</label>
+        <input type="text" name="b-ssn" id="b-ssn-input" placeholder="Social Security Number" disabled>
+    </form>
+
+    <input class="button-primary" type="button" value="submit" name="button" id="new-user-submit">
+
+    <p id="message-text"></p>
+
+</section>
+
+<script src="../js/pages/teller/tellerNewMember.js" type="module"></script>
+
+</body>
+<%- include('../../partials/footer'); %>
+</html>

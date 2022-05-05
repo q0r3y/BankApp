@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('../../partials/header'); %>
+    <link rel="stylesheet" href="../styles/teller/tellerStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerStatementStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerSearchStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerSearchResultStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerMemberShareStyles.css">
+</head>
+
+<body>
+
+<%- include ('../../partials/teller/tellerTopWelcomeBar'); -%>
+
+<section id="main-display-bar">
+    <%- include ('../../partials/teller/searchMember'); -%>
+    <%- include ('../../partials/teller/searchMemberResults'); -%>
+    <%- include ('../../partials/teller/memberShares'); -%>
+
+    <section id="statement-generator">
+        <label for="date-from">From date:</label>
+        <input type="date" id="date-from" max="0">
+        <label for="date-to">To date:</label>
+        <input type="date" id="date-to">
+        <input type="button" value="Generate Statements" id="generate-button">
+        <input type="button" value="Print" id="print-button">
+        <input type="button" value="Download CSV" id="csv-button">
+    </section>
+
+    <div id="print-area" hidden></div>
+
+    <%- include ('../../partials/teller/responseMessage'); -%>
+
+    <script src="../js/pages/teller/tellerStatements.js" type="module"></script>
+
+</section>
+
+</body>
+<%- include('../../partials/footer'); %>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('../../partials/header'); %>
+    <link rel="stylesheet" href="../styles/teller/tellerStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerWithdrawalStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerSearchStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerSearchResultStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerMemberShareStyles.css">
+</head>
+
+<body>
+<%- include ('../../partials/teller/tellerTopWelcomeBar'); -%>
+
+
+<section id="main-display-bar">
+    <%- include ('../../partials/teller/searchMember'); -%>
+    <%- include ('../../partials/teller/searchMemberResults'); -%>
+    <%- include ('../../partials/teller/memberShares'); -%>
+    <%- include ('../../partials/teller/responseMessage'); -%>
+
+    <section id="withdrawal-input">
+        <p>Withdrawal Amount: </p>
+        <input type="text" id="input-amount" placeholder="$">
+        <input type="button" value="Withdrawal" id="withdrawal-button">
+        <%- include ('../../partials/teller/printTransaction'); -%>
+    </section>
+    <script src="/js/components/teller/tellerWithdrawal.js" type="module"></script>
+</section>
+
+</body>
+<%- include('../../partials/footer'); %>
+</html>

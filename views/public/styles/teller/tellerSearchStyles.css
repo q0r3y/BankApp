@@ -1,0 +1,11 @@
+#search-bar-section {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#search-bar-section > * {
+    margin: 0;
+    padding: 0;
+}
+

@@ -1,0 +1,42 @@
+#main-display-bar {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2em 1fr 2em;
+    grid-template-rows: 2em auto 2em auto;
+}
+
+p {
+    grid-column-start: 2;
+    margin: auto;
+}
+
+form {
+    width: 100%;
+    grid-column-start: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-flow: row;
+}
+
+form > * {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+label {
+    grid-column-start: 1;
+    text-align: right;
+    margin-right: 1em;
+}
+
+input {
+    grid-column-start: 2;
+}
+
+#new-user-submit {
+    margin: auto;
+}
+
+#message-text {
+    color: crimson;
+}

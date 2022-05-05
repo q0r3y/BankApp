@@ -1,0 +1,17 @@
+#main-display-bar {
+    display: grid;
+    grid-template-rows: 5vh 10vh auto 3vh 3vh;
+}
+
+#message-response {
+    margin: auto;
+}
+
+#withdrawal-input {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+}
+
+#withdrawal-input > * {
+    margin: auto;
+}

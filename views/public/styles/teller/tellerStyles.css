@@ -1,0 +1,85 @@
+/** CSS styles for all application pages **/
+
+html {
+    font-family: Tahoma, serif;
+}
+
+body {
+    margin: 1vh auto;
+    height: 98vh;
+    width: 50vw;
+    background-color: SteelBlue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10vh auto;
+    grid-gap: 1vh;
+}
+
+#bank-name {
+    font-family: "Brush Script MT", serif;
+    font-style: italic;
+    font-size: 1.75em;
+    margin: 0;
+}
+
+#welcome-bar-section {
+    text-align: center;
+    background-color: lightgrey;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 10vh auto 10vh;
+}
+
+#welcome-name {
+    margin: 0;
+}
+
+#welcome-name {
+    text-transform: capitalize;
+}
+
+#page-name {
+    padding-top: 1%;
+    margin: 0;
+}
+
+#main-display-bar {
+    text-align: center;
+    background-color: lightgrey;
+    border-radius: 10px;
+}
+
+#main-display-bar > button {
+    font-size: 1.5em;
+}
+
+#message-response {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    margin: 1em;
+    border-radius: 10px;
+    padding: 0;
+}
+
+footer {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+
+    body {
+        margin: 6px auto 6px auto;
+        width: 92vw;
+    }
+
+    #menu-bar {
+        width: 95vw;
+    }
+
+}
+
+
+

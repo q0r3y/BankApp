@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('../../partials/header'); %>
+    <link rel="stylesheet" href="../styles/teller/tellerStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerSearchStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerCustomStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerSearchResultStyles.css">
+    <link rel="stylesheet" href="../styles/teller/tellerMemberShareStyles.css">
+</head>
+
+<body>
+
+<%- include ('../../partials/teller/tellerTopWelcomeBar'); -%>
+
+<section id="main-display-bar">
+    <%- include ('../../partials/teller/searchMember'); -%>
+    <%- include ('../../partials/teller/searchMemberResults'); -%>
+    <%- include ('../../partials/teller/memberShares'); -%>
+
+    <section id="custom-entry">
+        <button id="add-entry-button" class="custom-button">Add Custom Entry</button>
+        <div id="ce0">
+            <label for="code-input0">Code: </label>
+            <input type="text" maxlength="2" name="code-input0" id="code-input0" placeholder="[CR][KR][SW]">
+            <label for="share-input0">Share ID: </label>
+            <input type="text" name="share-input0" id="share-input0" placeholder="Share Id">
+            <label for="amount-input0">Amount: </label>
+            <input type="text" name="amount-input0" id="amount-input0" placeholder="$ Amount">
+        </div>
+    </section>
+    <%- include ('../../partials/teller/responseMessage'); -%>
+    <button id="custom-entry-submit" class="custom-button">Submit</button>
+    <script src="../js/pages/teller/tellerCustomEntry.js" type="module"></script>
+</section>
+
+</body>
+<%- include('../../partials/footer'); %>
+</html>

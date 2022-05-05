@@ -1,0 +1,46 @@
+#member-shares {
+    margin: 1em;
+    padding: 0;
+    text-align: center;
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 3em 1fr);
+    padding: 10px;
+}
+
+#member-shares > * {
+    padding: 0;
+}
+
+#member-shares {
+    height: 60vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+#member-shares::-webkit-scrollbar {
+    width: 1em;
+}
+
+#member-shares::-webkit-scrollbar-thumb {
+    background-color: SteelBlue; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid lightgrey; /* creates padding around scroll thumb */
+}
+
+.account-name {
+    text-align: left;
+}
+
+.balance-amount {
+    display: flex;
+    border-radius: 10px;
+    background: gray;
+    font-size: 3em;
+    vertical-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+div p {
+    margin: 0;
+}

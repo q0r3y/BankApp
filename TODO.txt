@@ -1,0 +1,8 @@
+Fix the search on the upload page so that it doesn't try to retrieve member shares since they aren't needed.
+
+Need to have a set of sub pages under /print for printing statements,
+money orders, and cashier's checks.
+
+Fix transaction amount on print page using accounting library
+
+statements should include previous balance and updated balance

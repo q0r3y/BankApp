@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('../../partials/header'); %>
+    <link rel="stylesheet" href="../styles/indexStyles.css">
+    <script src="../js/static.js" type="module"></script>
+    <script src="../js/pages/user/userLogin.js" type="module"></script>
+</head>
+<body>
+
+<figure>
+    <a href="/">
+        <img src="/images/152-bitcoin.png" alt="Mr.Big's Bank Logo">
+    </a>
+</figure>
+
+<form id="login-form">
+    <p>User Login</p>
+    <input type="text" name="email" id="email-input" placeholder="Email">
+    <input type="password" name="password" id="password-input" placeholder="Password">
+    <input type="button" value="Login" name="button" id="login-button">
+</form>
+
+<p id="message-text"></p>
+
+</body>
+<%- include('../../partials/footer'); %>
+</html>

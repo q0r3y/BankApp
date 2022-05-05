@@ -1,0 +1,10 @@
+#main-display-bar {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px;
+}
+
+
+
+

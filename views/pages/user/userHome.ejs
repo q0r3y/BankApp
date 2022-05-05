@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <%- include('../../partials/header'); %>
+    <link rel="stylesheet" href="../styles/user/userHomeStyles.css">
+</head>
+
+<body>
+
+<%- include ('../../partials/user/userTopWelcomBar.ejs'); -%>
+
+<section id="main-display-bar">
+
+    <% shares.forEach(function(shares) { %>
+
+        <p class="account-name"><%= "Account Balance: " + shares.shareId + "-" + shares.shareCode %></p>
+        <div class="balance-amount"><p><%= "$" + shares.balance %></p></div>
+
+    <% }); %>
+
+</section>
+
+<%- include ('../../partials/user/userBottomMenuBar.ejs'); -%>
+
+<script src="../js/components/user/AppScripts.js" type="module"></script>
+<script src="../js/components/user/menubar.js" type="module"></script>
+</body>
+<%- include('../../partials/footer'); %>
+</html>

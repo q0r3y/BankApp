@@ -1,0 +1,38 @@
+#search-result-bar {
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 0 2vh 0 2vh;
+    outline: 1px solid black;
+    border-radius: 10px;
+}
+
+#search-result-bar > ul {
+    outline: 1px solid black;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+#search-result-bar > ul > p {
+    margin: 0;
+    padding: 0;
+}
+
+#search-result-bar::-webkit-scrollbar {
+    width: 1em;
+}
+
+#search-result-bar::-webkit-scrollbar-thumb {
+    background-color: SteelBlue; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid lightgrey; /* creates padding around scroll thumb */
+}
+
+#member {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    outline: 1px solid blue;
+    margin: 0;
+    padding: 0;
+}

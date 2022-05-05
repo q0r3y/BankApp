@@ -1,0 +1,39 @@
+#main-display-bar {
+    display: grid;
+    grid-template-rows: 5vh 10vh auto auto auto;
+}
+
+#member-shares {
+    max-height: 35vh;
+}
+
+div > input {
+    max-width: 7em;
+}
+
+.custom-button {
+    margin: 0.5em auto 0.5em auto;
+    border-radius: 10px;
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+#custom-entry {
+    height: 20vh;
+    max-height: 20vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 0 2vh 0 2vh;
+    outline: 1px solid black;
+    border-radius: 10px;
+}
+
+#custom-entry::-webkit-scrollbar {
+    width: 1em;
+}
+
+#custom-entry::-webkit-scrollbar-thumb {
+    background-color: SteelBlue; /* color of the scroll thumb */
+    border-radius: 20px; /* roundness of the scroll thumb */
+    border: 3px solid lightgrey; /* creates padding around scroll thumb */
+}
